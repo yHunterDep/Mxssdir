@@ -45,7 +45,7 @@ python3 mxssdir.py -u http://testphp.vulnweb.com/ -p admin -ua "Mozilla/5.0 (Win
 python3 mxssdir.py -u http://testphp.vulnweb.com/ -p admin -ua "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" -sc
 ```
 
-# Xray OneLiner Git Exposed
+# Mxssdir OneLiner Git Exposed
 ```sh
 cat domains.txt | xargs -I @ sh -c 'python3 mxssdir.py -u @ -p .git'
 cat domains.txt | xargs -I @ sh -c 'python3 mxssdir.py -u @ -p .git --status_code'
