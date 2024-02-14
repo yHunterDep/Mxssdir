@@ -49,4 +49,5 @@ python3 mxssdir.py -u http://testphp.vulnweb.com/ -p admin -ua "Mozilla/5.0 (Win
 ```sh
 cat domains.txt | xargs -I @ sh -c 'python3 mxssdir.py -u @ -p .git'
 cat domains.txt | xargs -I @ sh -c 'python3 mxssdir.py -u @ -p .git --status_code'
+cat domains.txt | xargs -I @ sh -c 'python3 mxssdir.py -u @ -p .git -ua "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"'
 ```
