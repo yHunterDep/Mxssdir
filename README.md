@@ -48,4 +48,5 @@ python3 mxssdir.py -u http://testphp.vulnweb.com/ -p admin -ua "Mozilla/5.0 (Win
 # Xray OneLiner Git Exposed
 ```sh
 cat domains.txt | xargs -I @ sh -c 'python3 mxssdir.py -u @ -p .git'
+cat domains.txt | xargs -I @ sh -c 'python3 mxssdir.py -u @ -p .git --status_code'
 ```
