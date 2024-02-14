@@ -1,5 +1,7 @@
 # Mxssdir
+```sh
 mxssdir é um script em python que verifica se um path existe
+```
 
 # Clonar Repositório
 ```sh
@@ -41,4 +43,9 @@ python3 mxssdir.py -u http://testphp.vulnweb.com/ -p admin -sc
 ```sh
 python3 mxssdir.py -u http://testphp.vulnweb.com/ -p admin -ua "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
 python3 mxssdir.py -u http://testphp.vulnweb.com/ -p admin -ua "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" -sc
+```
+
+# Xray OneLiner Git Exposed
+```sh
+cat domains.txt | xargs -I @ sh -c 'python3 mxssdir.py -u @ -p .git'
 ```
