@@ -14,6 +14,17 @@ pip3 install -r requirements.txt
 # Help
 ```sh
 python3 mxssdir.py -h
+
+usage: mxssdir.py [-h] -u URL -p PATH [-sc] [-ua USER_AGENT]
+
+options:
+  -h, --help            show this help message and exit
+  -u URL, --url URL     coloque a url, exemplo: http://vulnweb.com/
+  -p PATH, --path PATH  coloque o diretório/path que deseja verificar, exemplo:
+                        admin
+  -sc, --status_code    verificar o status-code
+  -ua USER_AGENT, --user_agent USER_AGENT
+                        coloque o user-agent, Default: Mxssdir/1.0
 ```
 
 # Verificar se um path existe
